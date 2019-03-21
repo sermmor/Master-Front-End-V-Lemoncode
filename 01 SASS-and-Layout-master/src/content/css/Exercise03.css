@@ -1,0 +1,32 @@
+.navigationBarExercise03 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: darkcyan;
+    border-bottom: 0.1em solid #000000;
+}
+
+.navigationBarExercise03 a {
+    flex-grow: 1;
+    color: snow;
+    text-align: center;
+    padding: 0.9em 1em;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navigationBarExercise03 a:hover {
+    background-color: beige;
+    color: black;
+}
+
+.navigationBarExercise03 a.navigationActiveE3 {
+    background-color: orangered;
+    color:snow;
+}
+
+@media screen and (max-width: 40em) {
+    .navigationBarExercise03 a:first-of-type + a {display: none; }
+    .navigationBarExercise03 a:first-of-type + a + a {display: none; }
+}
